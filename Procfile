@@ -1,0 +1,1 @@
+web: gunicorn pyProject6.wsgi
