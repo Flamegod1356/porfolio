@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - FlameBlog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <p>
+            Have questions or suggestions? We'd love to hear from you! 😊
+        </p>
+
+        <form>
+            <label>Full Name:</label><br><br>
+            <input type="text" placeholder="Enter your name" required>
+            <br><br>
+
+            <label>Email Address:</label><br><br>
+            <input type="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label>Your Message:</label><br><br>
+            <textarea rows="5" cols="40" placeholder="Write your message here..." required></textarea>
+            <br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <h3>📍 Our Location</h3>
+        <p>India</p>
+
+        <h3>📧 Email</h3>
+        <p>contact@flameblog.com</p>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - FlameBlog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <!-- Blog Section -->
+    <section>
+        <h2>📝 Latest Blog Posts</h2>
+
+        <article>
+            <h3>🚀 Complete Django Roadmap for Beginners</h3>
+            <p><strong>Date:</strong> January 10, 2026</p>
+            <p>
+                Learn how to become a Django developer step by step. 
+                From Python basics to deployment.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+        <article>
+            <h3>💡 Top 10 Coding Tips for Beginners</h3>
+            <p><strong>Date:</strong> January 5, 2026</p>
+            <p>
+                Simple habits that will improve your programming skills faster.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+        <article>
+            <h3>🌐 Understanding HTML, CSS & JavaScript</h3>
+            <p><strong>Date:</strong> December 28, 2025</p>
+            <p>
+                Learn the difference between frontend technologies in easy words.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+    </section>
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+</body>
+</html>

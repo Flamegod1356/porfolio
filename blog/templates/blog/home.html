@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlameBlog - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+{% include "header.html" %}
+    <section>
+        <h2>Welcome to FlameBlog</h2>
+        <p>
+            Discover amazing articles about Technology, Programming, 
+            Motivation, and Web Development.
+        </p>
+        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" 
+             alt="Blog Banner" width="100%">
+    </section>
+
+    <hr>
+
+    <!-- Featured Blogs Section -->
+    <section>
+        <h2>🔥 Featured Posts</h2>
+
+        <article>
+            <h3>🚀 How to Become a Django Developer</h3>
+            <p><strong>Category:</strong> Web Development</p>
+            <p>
+                Step-by-step roadmap to becoming a professional Django developer.
+                Learn Python, Django, projects and deployment.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+        <br>
+
+        <article>
+            <h3>💡 10 Productivity Tips for Students</h3>
+            <p><strong>Category:</strong> Motivation</p>
+            <p>
+                Improve your daily routine with simple habits that can 
+                increase focus and success.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+        <br>
+
+        <article>
+            <h3>🌐 HTML vs CSS vs JavaScript</h3>
+            <p><strong>Category:</strong> Programming</p>
+            <p>
+                Understand the difference between HTML, CSS, and JavaScript 
+                in simple words with examples.
+            </p>
+            <a href="#">Read More</a>
+        </article>
+
+    </section>
+
+    <hr>
+
+    <!-- Categories Section -->
+    <section>
+        <h2>📚 Categories</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Python Programming</li>
+            <li>Motivation</li>
+            <li>Technology</li>
+            <li>Career Guidance</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Newsletter Section -->
+    <section>
+        <h2>📩 Subscribe to Newsletter</h2>
+        <form>
+            <label>Enter Your Email:</label><br><br>
+            <input type="email" placeholder="example@gmail.com" required>
+            <br><br>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <hr>
+
+{% include "footer.html" %}
+
+</body>
+</html>
